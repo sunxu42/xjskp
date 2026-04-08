@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>xjskp 本地任务</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 720px;
+        margin: 24px auto;
+        padding: 0 12px;
+      }
+      .task-list label {
+        display: block;
+        margin: 8px 0;
+      }
+      #logs {
+        margin-top: 16px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        padding: 8px;
+        min-height: 120px;
+        background: #fafafa;
+        white-space: pre-wrap;
+      }
+      button {
+        margin-top: 12px;
+        padding: 8px 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>xjskp 本地任务面板</h1>
+    <div id="status">状态：加载中...</div>
+    <div class="task-list" id="task-list"></div>
+    <button id="start-btn">执行</button>
+    <div id="logs"></div>
+
+    <script>
+      const taskListEl = document.getElementById("task-list");
+      const statusEl = document.getElementById("status");
+      const logsEl = document.getElementById("logs");
+      const startBtn = document.getElementById("start-btn");
+
+      function appendLog(text) {
+        const now = new Date().toLocaleTimeString();
+        logsEl.textContent += `[${now}] ${text}\n`;
+      }
+
+      async function loadHealth() {
+        const resp = await fetch("/api/health");
+        const data = await resp.json();
+        statusEl.textContent = `状态：${data.status}`;
+      }
+
+      async function loadTasks() {
+        const resp = await fetch("/api/tasks");
+        const tasks = await resp.json();
+        taskListEl.innerHTML = "";
+        tasks.forEach((task) => {
+          const label = document.createElement("label");
+          label.innerHTML = `<input type="checkbox" value="${task.id}" /> ${task.name}`;
+          taskListEl.appendChild(label);
+        });
+      }
+
+      async function startSelected() {
+        const selected = Array.from(
+          taskListEl.querySelectorAll("input[type='checkbox']:checked")
+        ).map((el) => el.value);
+        const resp = await fetch("/api/start", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ task_ids: selected }),
+        });
+        const data = await resp.json();
+        appendLog(`accepted=${data.accepted}, task_ids=${data.task_ids.join(",")}`);
+      }
+
+      startBtn.addEventListener("click", startSelected);
+
+      loadHealth().catch((e) => appendLog(`health error: ${e}`));
+      loadTasks().catch((e) => appendLog(`tasks error: ${e}`));
+    </script>
+  </body>
+  </html>
