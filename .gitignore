@@ -1,1 +1,11 @@
+__pycache__/
+.pytest_cache/
+.venv/
+artifacts/
+dist/
+build/
+*.spec
+.DS_Store
+.superpowers/
+logs/
 .worktrees/
