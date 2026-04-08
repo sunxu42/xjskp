@@ -12,3 +12,6 @@ class RuntimeState:
             {"id": "demo_branch_task", "name": "演示任务：识别后条件分支"}
         ]
     )
+
+    def push_log(self, line: str) -> None:
+        self.logs.append(line)
