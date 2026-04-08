@@ -5,6 +5,7 @@ artifacts/
 dist/
 build/
 *.spec
+!xjskp.spec
 .DS_Store
 .superpowers/
 logs/

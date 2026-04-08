@@ -13,3 +13,9 @@ Task1 阶段的 `run-dev` 需要 Task2 提供 `src/service/app.py` 后才能真�
 ```bash
 pytest -q
 ```
+
+## Build macOS DMG
+
+```bash
+bash scripts/build-macos.sh
+```
