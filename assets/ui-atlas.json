@@ -1,0 +1,579 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-04-09T04:31:17Z",
+  "sources": {
+    "assets/pages/base.json": {
+      "sha256": "162458974f9d7a438132b7767e04bf74d7690bf5dac866d5e0f7f57573bbea18",
+      "screen_ids": [
+        "base"
+      ]
+    },
+    "assets/pages/common.json": {
+      "sha256": "a320ea6fc0e4789cf733e4ec6b4a690f993930887eae341ee46ab389bc63c9dc",
+      "screen_ids": [
+        "common_1",
+        "common_2",
+        "common_3"
+      ]
+    },
+    "assets/pages/popup.json": {
+      "sha256": "572ecfdfe0878e1477427740b191c8fbd944a95f738dccc3c74f9b3acbcb6570",
+      "screen_ids": [
+        "popup_1",
+        "popup_2",
+        "popup_3",
+        "popup_4",
+        "popup_5"
+      ]
+    },
+    "assets/pages/历练大厅.json": {
+      "sha256": "30e4ddb6046ec5b094c783ba0fb767ceef5bcd8ec452890eba853ad91c549c3b",
+      "screen_ids": [
+        "li_lian_da_ting_1",
+        "li_lian_da_ting_2"
+      ]
+    },
+    "assets/pages/深渊.json": {
+      "sha256": "77dba5d6b54a40931d617265b84f318b8024e169d7925194c0a30afb83eb8bbd",
+      "screen_ids": [
+        "shen_yuan_1",
+        "shen_yuan_2",
+        "shen_yuan_3",
+        "shen_yuan_4",
+        "shen_yuan_5"
+      ]
+    }
+  },
+  "screens": {
+    "base": {
+      "name_zh": "base",
+      "elements": [
+        {
+          "source_id": "dnKD-5nqlh",
+          "kind": "rectangle",
+          "label_zh": "历练大厅",
+          "x": 17.831470824565294,
+          "y": 54.760643572874116,
+          "width": 17.43812955637636,
+          "height": 2.1876330199108267
+        },
+        {
+          "source_id": "Fly1U8LEh4",
+          "kind": "rectangle",
+          "label_zh": "研究所",
+          "x": 30.02362065536781,
+          "y": 37.715376822069786,
+          "width": 13.494659283928609,
+          "height": 2.1685278668833803
+        },
+        {
+          "source_id": "nvR17ebaX8",
+          "kind": "rectangle",
+          "label_zh": "食堂",
+          "x": 66.71176573692385,
+          "y": 50.08174088276006,
+          "width": 9.620460649144377,
+          "height": 2.1757470367707725
+        },
+        {
+          "source_id": "-FwBumPKo9",
+          "kind": "rectangle",
+          "label_zh": "远征堡垒",
+          "x": 49.65262107387563,
+          "y": 71.0205040913965,
+          "width": 17.441503665711174,
+          "height": 2.2922588966616786
+        },
+        {
+          "source_id": "zwu4n09T8o",
+          "kind": "rectangle",
+          "label_zh": "酒馆",
+          "x": 69.42444237921141,
+          "y": 79.24528388828645,
+          "width": 9.62212730079601,
+          "height": 2.295902669886658
+        }
+      ]
+    },
+    "common_1": {
+      "name_zh": "common·1",
+      "elements": [
+        {
+          "source_id": "IKL84yjn-M",
+          "kind": "point",
+          "label_zh": "shop",
+          "x": 8.0806121871793,
+          "y": 95.5249569707401,
+          "width": 0.6464489749743441,
+          "height": null
+        },
+        {
+          "source_id": "A-zIru-V8q",
+          "kind": "point",
+          "label_zh": "role",
+          "x": 22.30248963661487,
+          "y": 95.35283993115318,
+          "width": 0.6464489749743441,
+          "height": null
+        },
+        {
+          "source_id": "egdoofPv3i",
+          "kind": "point",
+          "label_zh": "core",
+          "x": 35.8779181110761,
+          "y": 95.35283993115318,
+          "width": 0.6464489749743441,
+          "height": null
+        },
+        {
+          "source_id": "7-fjbsjOXY",
+          "kind": "point",
+          "label_zh": "combat",
+          "x": 50.42302004799883,
+          "y": 95.35283993115318,
+          "width": 0.6464489749743441,
+          "height": null
+        },
+        {
+          "source_id": "fhtsDLj-D5",
+          "kind": "point",
+          "label_zh": "base",
+          "x": 63.675224034972885,
+          "y": 95.69707401032701,
+          "width": 0.6464489749743441,
+          "height": null
+        },
+        {
+          "source_id": "3sYcP8KJzv",
+          "kind": "point",
+          "label_zh": "legion",
+          "x": 77.57387699692129,
+          "y": 95.00860585197934,
+          "width": 0.6464489749743441,
+          "height": null
+        },
+        {
+          "source_id": "oNQqJUrC_x",
+          "kind": "point",
+          "label_zh": "journey",
+          "x": 91.47252995886969,
+          "y": 95.35283993115318,
+          "width": 0.6464489749743441,
+          "height": null
+        }
+      ]
+    },
+    "common_2": {
+      "name_zh": "common·2",
+      "elements": [
+        {
+          "source_id": "PmrnwzvoQu",
+          "kind": "point",
+          "label_zh": "backToLast",
+          "x": 9.050285649640816,
+          "y": 94.83648881239243,
+          "width": 0.6464489749743441,
+          "height": null
+        }
+      ]
+    },
+    "common_3": {
+      "name_zh": "common·3",
+      "elements": [
+        {
+          "source_id": "AfGTpfoiSn",
+          "kind": "point",
+          "label_zh": "点击空白",
+          "x": 46.544326198152774,
+          "y": 92.59896729776248,
+          "width": 0.6464489749743441,
+          "height": null
+        }
+      ]
+    },
+    "popup_1": {
+      "name_zh": "popup·1",
+      "elements": [
+        {
+          "source_id": "yUPtWZEnHc",
+          "kind": "rectangle",
+          "label_zh": "前往查看",
+          "x": 40.53139189758752,
+          "y": 70.82630390296445,
+          "width": 19.369188677306106,
+          "height": 2.621261196964724
+        },
+        {
+          "source_id": "34-vN9crux",
+          "kind": "point",
+          "label_zh": "关闭查看",
+          "x": 92.22639045396241,
+          "y": 17.391443509963032,
+          "width": 0.6464489749743441,
+          "height": null
+        }
+      ]
+    },
+    "popup_2": {
+      "name_zh": "popup·2",
+      "elements": [
+        {
+          "source_id": "3eX7zpkflo",
+          "kind": "rectangle",
+          "label_zh": "快速巡逻",
+          "x": 16.181471600422732,
+          "y": 77.59409671174143,
+          "width": 18.77661327218862,
+          "height": 2.601247887464183
+        },
+        {
+          "source_id": "kPpCET8LOZ",
+          "kind": "point",
+          "label_zh": "关闭快速巡逻",
+          "x": 71.29006827733403,
+          "y": 78.73214266250702,
+          "width": 0.6464489749743441,
+          "height": null
+        }
+      ]
+    },
+    "popup_3": {
+      "name_zh": "popup·3",
+      "elements": [
+        {
+          "source_id": "kE21v29Gbn",
+          "kind": "rectangle",
+          "label_zh": "进入活动",
+          "x": 41.30526117899268,
+          "y": 74.50681423719985,
+          "width": 20.082902849096442,
+          "height": 2.5028851795443074
+        },
+        {
+          "source_id": "p7RnglUbES",
+          "kind": "point",
+          "label_zh": "关闭活动",
+          "x": 92.29589394478364,
+          "y": 17.520196256810145,
+          "width": 0.6464489749743441,
+          "height": null
+        }
+      ]
+    },
+    "popup_4": {
+      "name_zh": "popup·4",
+      "elements": [
+        {
+          "source_id": "WAIUhHzCsX",
+          "kind": "rectangle",
+          "label_zh": "特惠礼包",
+          "x": 41.28827077835177,
+          "y": 49.43698073961652,
+          "width": 16.578464366068594,
+          "height": 2.1859889442687646
+        },
+        {
+          "source_id": "bJEzd79OH9",
+          "kind": "point",
+          "label_zh": "关闭特惠礼包",
+          "x": 91.79575444635685,
+          "y": 17.38382099827883,
+          "width": 0.6464489749743441,
+          "height": null
+        }
+      ]
+    },
+    "popup_5": {
+      "name_zh": "popup·5",
+      "elements": [
+        {
+          "source_id": "dn6soDujQd",
+          "kind": "rectangle",
+          "label_zh": "钻石幸运星",
+          "x": 82.16670072780632,
+          "y": 27.08604622831188,
+          "width": 16.634976220966934,
+          "height": 1.9684721861477499
+        },
+        {
+          "source_id": "FkVbdjavs9",
+          "kind": "point",
+          "label_zh": "关闭钻石幸运星",
+          "x": 92.2485044980893,
+          "y": 17.154209289111854,
+          "width": 0.6464489749743441,
+          "height": null
+        }
+      ]
+    },
+    "li_lian_da_ting_1": {
+      "name_zh": "历练大厅·1",
+      "elements": [
+        {
+          "source_id": "s_o-Zh8HI8",
+          "kind": "point",
+          "label_zh": "深渊_挑战",
+          "x": 65.52534224376996,
+          "y": 40.568495086068054,
+          "width": 0.6464489749743441,
+          "height": null
+        },
+        {
+          "source_id": "o4KSY7c82e",
+          "kind": "rectangle",
+          "label_zh": "深渊挑战",
+          "x": 8.151477982478559,
+          "y": 24.958806647601538,
+          "width": 17.87054788466454,
+          "height": 2.4207538220081766
+        },
+        {
+          "source_id": "iPRTWznbYc",
+          "kind": "point",
+          "label_zh": "救援_挑战",
+          "x": 66.30913820362366,
+          "y": 62.18833094469281,
+          "width": 0.6464489749743441,
+          "height": null
+        },
+        {
+          "source_id": "r5L1kDSlzT",
+          "kind": "rectangle",
+          "label_zh": "寰球救援",
+          "x": 8.151477982478559,
+          "y": 46.6621167759507,
+          "width": 17.87054788466454,
+          "height": 2.3372795522837606
+        },
+        {
+          "source_id": "f_SOAa1VTW",
+          "kind": "point",
+          "label_zh": "远征_挑战",
+          "x": 78.06607760142927,
+          "y": 79.8848761262698,
+          "width": 0.6464489749743441,
+          "height": null
+        },
+        {
+          "source_id": "0fPxNsHT5B",
+          "kind": "rectangle",
+          "label_zh": "寰球远征",
+          "x": 7.994718790507818,
+          "y": 63.94129060890561,
+          "width": 17.870547884664532,
+          "height": 2.4207538220081872
+        }
+      ]
+    },
+    "li_lian_da_ting_2": {
+      "name_zh": "历练大厅·2",
+      "elements": [
+        {
+          "source_id": "7BSDPcubUS",
+          "kind": "rectangle",
+          "label_zh": "战场争霸",
+          "x": 8.116218354917207,
+          "y": 25.760716869987053,
+          "width": 17.407152524361905,
+          "height": 2.3315439109701295
+        },
+        {
+          "source_id": "LcTHmTgC0O",
+          "kind": "point",
+          "label_zh": "争霸_挑战",
+          "x": 66.63842438774128,
+          "y": 41.85405654814674,
+          "width": 0.6464489749743441,
+          "height": null
+        },
+        {
+          "source_id": "NSNGOVKlxz",
+          "kind": "rectangle",
+          "label_zh": "雾镜迷宫",
+          "x": 8.116218354917207,
+          "y": 47.37014823995411,
+          "width": 17.300360177586676,
+          "height": 2.388410835627944
+        },
+        {
+          "source_id": "RxJ2ynyB6P",
+          "kind": "point",
+          "label_zh": "迷宫_挑战",
+          "x": 66.63842438774128,
+          "y": 63.29288714414037,
+          "width": 0.6464489749743441,
+          "height": null
+        },
+        {
+          "source_id": "X1ZE9Qiunf",
+          "kind": "rectangle",
+          "label_zh": "元素试炼",
+          "x": 7.902633661366753,
+          "y": 68.97957960992119,
+          "width": 17.620737217912357,
+          "height": 2.388410835627937
+        },
+        {
+          "source_id": "uA06TVjHmR",
+          "kind": "point",
+          "label_zh": "试炼_挑战",
+          "x": 66.53163204096604,
+          "y": 84.78858466479183,
+          "width": 0.6464489749743441,
+          "height": null
+        }
+      ]
+    },
+    "shen_yuan_1": {
+      "name_zh": "深渊·1",
+      "elements": [
+        {
+          "source_id": "8Rp8b3pR8V",
+          "kind": "rectangle",
+          "label_zh": "深渊挑战",
+          "x": 3.1601166573493704,
+          "y": 12.4068054613011,
+          "width": 35.08265102650574,
+          "height": 4.591944090274659
+        },
+        {
+          "source_id": "mJMzlwCUqn",
+          "kind": "rectangle",
+          "label_zh": "剩余次数",
+          "x": 35.72538661783103,
+          "y": 80.31623949200896,
+          "width": 21.370958411566086,
+          "height": 1.6827621200385323
+        },
+        {
+          "source_id": "Ns18kYUE_V",
+          "kind": "rectangle",
+          "label_zh": "直接获得奖励",
+          "x": 56.078680343132056,
+          "y": 93.92094341164258,
+          "width": 19.603435535421532,
+          "height": 1.6542407281734768
+        }
+      ]
+    },
+    "shen_yuan_2": {
+      "name_zh": "深渊·2",
+      "elements": [
+        {
+          "source_id": "BOoiFGFW7h",
+          "kind": "rectangle",
+          "label_zh": "选择技能",
+          "x": 40.3002777388587,
+          "y": 44.60876923739849,
+          "width": 19.49712510977193,
+          "height": 2.831514305714606
+        },
+        {
+          "source_id": "Qw9tuiJ4Kk",
+          "kind": "rectangle",
+          "label_zh": "技能1",
+          "x": 6.436849916623265,
+          "y": 54.444555773038694,
+          "width": 14.832741112218828,
+          "height": 1.9373518933836777
+        },
+        {
+          "source_id": "Qb8mNHtby3",
+          "kind": "rectangle",
+          "label_zh": "技能2",
+          "x": 30.411783664046148,
+          "y": 54.84196128963021,
+          "width": 12.87369983324654,
+          "height": 1.291567928922447
+        },
+        {
+          "source_id": "rt1YGaIK53",
+          "kind": "rectangle",
+          "label_zh": "技能3",
+          "x": 54.38671741146904,
+          "y": 54.643258531334446,
+          "width": 14.459590392414576,
+          "height": 1.7386491350879254
+        },
+        {
+          "source_id": "N3h48uDI7n",
+          "kind": "rectangle",
+          "label_zh": "技能4",
+          "x": 79.0102720110111,
+          "y": 54.643258531334446,
+          "width": 13.62000127285502,
+          "height": 1.6889734455139802
+        },
+        {
+          "source_id": "ugD8SILzFo",
+          "kind": "point",
+          "label_zh": "确认技能",
+          "x": 49.69940704554605,
+          "y": 85.85659051573779,
+          "width": 0.6464489749743441,
+          "height": null
+        }
+      ]
+    },
+    "shen_yuan_3": {
+      "name_zh": "深渊·3",
+      "elements": [
+        {
+          "source_id": "rWb-gznimA",
+          "kind": "rectangle",
+          "label_zh": "深渊怪物强化",
+          "x": 35.91641170436525,
+          "y": 41.1986345117465,
+          "width": 28.578650173365894,
+          "height": 2.4678050622676793
+        },
+        {
+          "source_id": "ghy_IAtonG",
+          "kind": "point",
+          "label_zh": "确认技能",
+          "x": 48.16044863558863,
+          "y": 85.88640275387263,
+          "width": 0.6464489749743441,
+          "height": null
+        }
+      ]
+    },
+    "shen_yuan_4": {
+      "name_zh": "深渊·4",
+      "elements": [
+        {
+          "source_id": "pJanmZGPKF",
+          "kind": "rectangle",
+          "label_zh": "提示",
+          "x": 44.03724102115312,
+          "y": 37.849756253660374,
+          "width": 11.273420152023867,
+          "height": 2.3317811806179876
+        },
+        {
+          "source_id": "knjT32Cbef",
+          "kind": "point",
+          "label_zh": "关闭提示",
+          "x": 66.42932701151251,
+          "y": 64.29762574640255,
+          "width": 0.6464489749743441,
+          "height": null
+        }
+      ]
+    },
+    "shen_yuan_5": {
+      "name_zh": "深渊·5",
+      "elements": [
+        {
+          "source_id": "GRcmY9vob5",
+          "kind": "rectangle",
+          "label_zh": "恭喜获得",
+          "x": 39.92111685342078,
+          "y": 35.359413535683025,
+          "width": 19.960558426710385,
+          "height": 2.5407961822047653
+        }
+      ]
+    }
+  }
+}
