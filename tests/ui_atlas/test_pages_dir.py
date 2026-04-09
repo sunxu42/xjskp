@@ -10,12 +10,14 @@ def test_build_merges_multiple_files(tmp_path):
     pages.mkdir()
     one = (FIX / "one_rect_one_task.json").read_bytes()
     (pages / "alpha.json").write_bytes(one)
-    (pages / "beta.json").write_bytes(one)
+    (pages / "renamed_export.json").write_bytes(one)
     atlas = build_atlas_from_pages_dir(pages)
-    assert atlas["schemaVersion"] == 1
+    assert atlas["schemaVersion"] == 2
     assert len(atlas["screens"]) == 2
     assert "generatedAt" in atlas
-    assert len(atlas["sources"]) == 2
+    assert "sources" not in atlas
+    assert "ls_p99_t9001" in atlas["screens"]
+    assert "ls_p99_t9001_2" in atlas["screens"]
 
 
 def test_unique_screen_id_merges_duplicate_keys():

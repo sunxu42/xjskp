@@ -1,6 +1,7 @@
 [
   {
     "id": 9001,
+    "project": 99,
     "inner_id": 1,
     "annotations": [
       {

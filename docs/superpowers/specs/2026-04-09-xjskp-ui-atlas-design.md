@@ -24,14 +24,15 @@
 - 每条源任务对应图鉴中的**一个独立 `screen`**，与其它界面**平级**。
 - 图鉴 JSON **不出现** `task_id`、`inner_id`、`file_upload` 等流程或导出元信息作为结构层级；若需追溯，仅可作为可选调试字段写入某屏的 `meta`（默认不输出给 AI 主路径，见第 8 节）。
 
-**同一文件多屏的命名**
+**同一导出内多任务**
 
-- `name_zh`：以源文件名中的界面名为基底（如 `深渊`），若同文件多屏，在中文名上加可区分后缀（如 `深渊·战场分页`），具体文案在生成后由你确认或通过问答补全。
-- 英文 `screen` key：稳定、唯一，建议模式 `{file_stem}_{ordinal}` 或 `{file_stem}_{short_slug}`（实现阶段在计划中细化），保证同一仓库内不冲突。
+- `name_zh`：由**标注内容**推断（按 `result` 顺序取第一个矩形或关键点的标签），与磁盘上的导出文件名无关；同一 JSON 内多任务时在标签后加 `·1`、`·2` 等区分（与 xjskp-AI 的 `transform_label_studio_points.py` 一致：**身份来自导出内容，不依赖文件名**）。
+- 英文 `screen` key（`screen_id`）：`ls_p{project}_t{task_id}`，其中 `project`、`id` 为 Label Studio 任务对象上的字段；缺省时退化为任务 JSON 的短哈希 `ls_h{12hex}`。合并多份导出时若 `screen_id` 冲突则自动加 `_2`、`_3`…
 
 ## 4. 输出 JSON 顶层结构
 
-- 使用 **`schemaVersion`**（整数）与可选 **`generatedAt`**（ISO 时间）、**`sources`**（各源文件校验和或修改时间，便于 diff）便于演进与更新。
+- 使用 **`schemaVersion`**（整数，当前为 **2**）与 **`generatedAt`**（ISO 时间，UTC）便于演进与更新。
+- **不**再输出按路径索引的 **`sources`** 映射（避免导出文件改名后图鉴与磁盘路径耦合）。
 - 使用 **`screens`** 对象：键为**全英文**界面 id（`screen_id`），值为该界面的定义。
 - **禁止**使用中文作为 JSON 的 key（避免编码、排序与工具链问题）。
 
@@ -39,9 +40,10 @@
 
 | 字段 | 必填 | 说明 |
 |------|------|------|
-| `name_zh` | 是 | 中文界面名，供 AI 将你的自然语言描述对齐到具体 `screen_id`。 |
+| `name_zh` | 是 | 中文界面名（由标注首标签推断），供 AI 将你的自然语言描述对齐到具体 `screen_id`。 |
 | `name_en` | 否 | 产品侧英文界面名；无则省略。 |
 | `elements` | 是 | 该界面下所有点与矩形的扁平数组。 |
+| `meta` | 否 | 若任务含 `project` 与 `id`，可写 `{"ls_project": …, "ls_task": …}` 便于追溯（非流程字段）。 |
 
 若某屏仅有英文 key、无法自动得到可靠 `name_zh`，**必须先向你询问**再写入。
 
@@ -86,16 +88,17 @@
 - **主交付物（合并后，含 overlay 语义）**：仓库内 `assets/ui-atlas.json`。
 - **可再生几何**（仅导出，不含你写的说明）：`assets/ui-atlas.generated.json`（由 `sync` / `generate` 覆盖写入）。
 - **人工维护的说明与关系**：`assets/ui-atlas.overlay.json`，键格式 `"{screen_id}::{source_id}"`。
-- **更新命令**（在 `xjskp` 根目录、已安装 `requirements-ui-atlas.txt`）：
+- **更新命令**（在 `xjskp` 根目录，仅需 Python 标准库与仓库内 `src/ui_atlas`，无额外 pip 依赖）：
 
 ```bash
 python -m src.ui_atlas.cli sync \
   --pages assets/pages \
   --overlay assets/ui-atlas.overlay.json \
   --out-generated assets/ui-atlas.generated.json \
-  --out-merged assets/ui-atlas.json \
-  --repo-root .
+  --out-merged assets/ui-atlas.json
 ```
+
+- **Cursor 中**：使用项目技能 **`ui-atlas-sync`**（见 `.cursor/skills/ui-atlas-sync/SKILL.md`），例如在对话里 `@ui-atlas-sync` 或按该技能说明触发，由代理自动执行上述 `sync`。
 
 - 可选：从同一数据生成简短 `README` 或索引说明 **schemaVersion** 与字段含义；**不**强制，以免重复维护。
 

@@ -1,52 +1,9 @@
 {
-  "schemaVersion": 1,
-  "generatedAt": "2026-04-09T04:31:17Z",
-  "sources": {
-    "assets/pages/base.json": {
-      "sha256": "162458974f9d7a438132b7767e04bf74d7690bf5dac866d5e0f7f57573bbea18",
-      "screen_ids": [
-        "base"
-      ]
-    },
-    "assets/pages/common.json": {
-      "sha256": "a320ea6fc0e4789cf733e4ec6b4a690f993930887eae341ee46ab389bc63c9dc",
-      "screen_ids": [
-        "common_1",
-        "common_2",
-        "common_3"
-      ]
-    },
-    "assets/pages/popup.json": {
-      "sha256": "572ecfdfe0878e1477427740b191c8fbd944a95f738dccc3c74f9b3acbcb6570",
-      "screen_ids": [
-        "popup_1",
-        "popup_2",
-        "popup_3",
-        "popup_4",
-        "popup_5"
-      ]
-    },
-    "assets/pages/历练大厅.json": {
-      "sha256": "30e4ddb6046ec5b094c783ba0fb767ceef5bcd8ec452890eba853ad91c549c3b",
-      "screen_ids": [
-        "li_lian_da_ting_1",
-        "li_lian_da_ting_2"
-      ]
-    },
-    "assets/pages/深渊.json": {
-      "sha256": "77dba5d6b54a40931d617265b84f318b8024e169d7925194c0a30afb83eb8bbd",
-      "screen_ids": [
-        "shen_yuan_1",
-        "shen_yuan_2",
-        "shen_yuan_3",
-        "shen_yuan_4",
-        "shen_yuan_5"
-      ]
-    }
-  },
+  "schemaVersion": 2,
+  "generatedAt": "2026-04-09T04:44:23Z",
   "screens": {
-    "base": {
-      "name_zh": "base",
+    "ls_p12_t216": {
+      "name_zh": "历练大厅",
       "elements": [
         {
           "source_id": "dnKD-5nqlh",
@@ -93,10 +50,14 @@
           "width": 9.62212730079601,
           "height": 2.295902669886658
         }
-      ]
+      ],
+      "meta": {
+        "ls_project": 12,
+        "ls_task": 216
+      }
     },
-    "common_1": {
-      "name_zh": "common·1",
+    "ls_p17_t207": {
+      "name_zh": "shop·1",
       "elements": [
         {
           "source_id": "IKL84yjn-M",
@@ -161,10 +122,14 @@
           "width": 0.6464489749743441,
           "height": null
         }
-      ]
+      ],
+      "meta": {
+        "ls_project": 17,
+        "ls_task": 207
+      }
     },
-    "common_2": {
-      "name_zh": "common·2",
+    "ls_p17_t208": {
+      "name_zh": "backToLast·2",
       "elements": [
         {
           "source_id": "PmrnwzvoQu",
@@ -175,10 +140,14 @@
           "width": 0.6464489749743441,
           "height": null
         }
-      ]
+      ],
+      "meta": {
+        "ls_project": 17,
+        "ls_task": 208
+      }
     },
-    "common_3": {
-      "name_zh": "common·3",
+    "ls_p17_t228": {
+      "name_zh": "点击空白·3",
       "elements": [
         {
           "source_id": "AfGTpfoiSn",
@@ -189,10 +158,14 @@
           "width": 0.6464489749743441,
           "height": null
         }
-      ]
+      ],
+      "meta": {
+        "ls_project": 17,
+        "ls_task": 228
+      }
     },
-    "popup_1": {
-      "name_zh": "popup·1",
+    "ls_p15_t209": {
+      "name_zh": "前往查看·1",
       "elements": [
         {
           "source_id": "yUPtWZEnHc",
@@ -212,10 +185,14 @@
           "width": 0.6464489749743441,
           "height": null
         }
-      ]
+      ],
+      "meta": {
+        "ls_project": 15,
+        "ls_task": 209
+      }
     },
-    "popup_2": {
-      "name_zh": "popup·2",
+    "ls_p15_t210": {
+      "name_zh": "快速巡逻·2",
       "elements": [
         {
           "source_id": "3eX7zpkflo",
@@ -235,10 +212,14 @@
           "width": 0.6464489749743441,
           "height": null
         }
-      ]
+      ],
+      "meta": {
+        "ls_project": 15,
+        "ls_task": 210
+      }
     },
-    "popup_3": {
-      "name_zh": "popup·3",
+    "ls_p15_t211": {
+      "name_zh": "进入活动·3",
       "elements": [
         {
           "source_id": "kE21v29Gbn",
@@ -258,10 +239,14 @@
           "width": 0.6464489749743441,
           "height": null
         }
-      ]
+      ],
+      "meta": {
+        "ls_project": 15,
+        "ls_task": 211
+      }
     },
-    "popup_4": {
-      "name_zh": "popup·4",
+    "ls_p15_t212": {
+      "name_zh": "特惠礼包·4",
       "elements": [
         {
           "source_id": "WAIUhHzCsX",
@@ -281,10 +266,14 @@
           "width": 0.6464489749743441,
           "height": null
         }
-      ]
+      ],
+      "meta": {
+        "ls_project": 15,
+        "ls_task": 212
+      }
     },
-    "popup_5": {
-      "name_zh": "popup·5",
+    "ls_p15_t213": {
+      "name_zh": "钻石幸运星·5",
       "elements": [
         {
           "source_id": "dn6soDujQd",
@@ -304,10 +293,14 @@
           "width": 0.6464489749743441,
           "height": null
         }
-      ]
+      ],
+      "meta": {
+        "ls_project": 15,
+        "ls_task": 213
+      }
     },
-    "li_lian_da_ting_1": {
-      "name_zh": "历练大厅·1",
+    "ls_p18_t221": {
+      "name_zh": "深渊_挑战·1",
       "elements": [
         {
           "source_id": "s_o-Zh8HI8",
@@ -363,10 +356,14 @@
           "width": 17.870547884664532,
           "height": 2.4207538220081872
         }
-      ]
+      ],
+      "meta": {
+        "ls_project": 18,
+        "ls_task": 221
+      }
     },
-    "li_lian_da_ting_2": {
-      "name_zh": "历练大厅·2",
+    "ls_p18_t222": {
+      "name_zh": "战场争霸·2",
       "elements": [
         {
           "source_id": "7BSDPcubUS",
@@ -422,10 +419,14 @@
           "width": 0.6464489749743441,
           "height": null
         }
-      ]
+      ],
+      "meta": {
+        "ls_project": 18,
+        "ls_task": 222
+      }
     },
-    "shen_yuan_1": {
-      "name_zh": "深渊·1",
+    "ls_p19_t223": {
+      "name_zh": "深渊挑战·1",
       "elements": [
         {
           "source_id": "8Rp8b3pR8V",
@@ -454,10 +455,14 @@
           "width": 19.603435535421532,
           "height": 1.6542407281734768
         }
-      ]
+      ],
+      "meta": {
+        "ls_project": 19,
+        "ls_task": 223
+      }
     },
-    "shen_yuan_2": {
-      "name_zh": "深渊·2",
+    "ls_p19_t224": {
+      "name_zh": "选择技能·2",
       "elements": [
         {
           "source_id": "BOoiFGFW7h",
@@ -513,10 +518,14 @@
           "width": 0.6464489749743441,
           "height": null
         }
-      ]
+      ],
+      "meta": {
+        "ls_project": 19,
+        "ls_task": 224
+      }
     },
-    "shen_yuan_3": {
-      "name_zh": "深渊·3",
+    "ls_p19_t225": {
+      "name_zh": "深渊怪物强化·3",
       "elements": [
         {
           "source_id": "rWb-gznimA",
@@ -536,10 +545,14 @@
           "width": 0.6464489749743441,
           "height": null
         }
-      ]
+      ],
+      "meta": {
+        "ls_project": 19,
+        "ls_task": 225
+      }
     },
-    "shen_yuan_4": {
-      "name_zh": "深渊·4",
+    "ls_p19_t226": {
+      "name_zh": "提示·4",
       "elements": [
         {
           "source_id": "pJanmZGPKF",
@@ -559,10 +572,14 @@
           "width": 0.6464489749743441,
           "height": null
         }
-      ]
+      ],
+      "meta": {
+        "ls_project": 19,
+        "ls_task": 226
+      }
     },
-    "shen_yuan_5": {
-      "name_zh": "深渊·5",
+    "ls_p19_t227": {
+      "name_zh": "恭喜获得·5",
       "elements": [
         {
           "source_id": "GRcmY9vob5",
@@ -573,7 +590,11 @@
           "width": 19.960558426710385,
           "height": 2.5407961822047653
         }
-      ]
+      ],
+      "meta": {
+        "ls_project": 19,
+        "ls_task": 227
+      }
     }
   }
 }

@@ -1,12 +1,14 @@
 # xjskp UI Atlas（界面图鉴）Implementation Plan
 
+> **2026-04-09 修订**：已实现 **schemaVersion 2**——`screen_id` 改为 `ls_p{project}_t{task_id}`（仅依赖 Label Studio 导出内容），移除顶层 `sources` 路径映射与 `pypinyin`；同步工作流见项目技能 `.cursor/skills/ui-atlas-sync/SKILL.md`。下文早期任务描述（slug、`sources`、`--repo-root`）仅供历史对照，以当前代码与 spec 为准。
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** 从 `assets/pages/*.json`（Label Studio 导出）自动生成符合 `2026-04-09-xjskp-ui-atlas-design.md` 的合并图鉴 JSON，并支持 overlay 合并与增量更新时的语义字段保留。
 
-**Architecture:** 纯 Python 库 `src/ui_atlas/`：解析导出 → 生成「可再生」`ui-atlas.generated.json`；人工维护的 `ui-atlas.overlay.json` 仅按 `screen_id` + `source_id` 存 `description_zh` 与 `relations`；`build` 命令写出供 AI 阅读的合并文件 `assets/ui-atlas.json`。`screen_id` 由文件名 stem 经拼音 snake_case 派生，同文件多任务加序后缀。点的 `height` 导出缺失时写 `null`。
+**Architecture（当前 v2）：** 纯 Python 库 `src/ui_atlas/`：解析导出 → `ui-atlas.generated.json`；`ui-atlas.overlay.json` 存 `description_zh` / `relations`；合并为 `assets/ui-atlas.json`。`screen_id` 为 `ls_p{project}_t{task_id}`，与导出文件名无关；无顶层 `sources`。点的 `height` 缺失时写 `null`。
 
-**Tech Stack:** Python 3.11+（与仓库现有服务一致）、pytest、`pypinyin`（中文 stem → ASCII `screen_id`）、标准库 `json` / `hashlib` / `pathlib` / `argparse`。
+**Tech Stack:** Python 3.11+、pytest、标准库 `json` / `hashlib` / `pathlib` / `argparse`。
 
 ---
 
