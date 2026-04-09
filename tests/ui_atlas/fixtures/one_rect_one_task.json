@@ -1,0 +1,23 @@
+[
+  {
+    "id": 9001,
+    "inner_id": 1,
+    "annotations": [
+      {
+        "result": [
+          {
+            "id": "rect-a",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 10.0,
+              "y": 20.0,
+              "width": 30.0,
+              "height": 5.0,
+              "rectanglelabels": ["入口"]
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,7 +1,7 @@
 # xjskp UI Atlas（界面图鉴 JSON）设计说明
 
 **日期**: 2026-04-09  
-**状态**: 已与你对齐需求，待你审阅后进入实现计划（writing-plans）
+**状态**: 已实现（代码与命令见 `docs/superpowers/plans/2026-04-09-xjskp-ui-atlas-implementation-plan.md`）
 
 ## 1. 目标
 
@@ -83,7 +83,20 @@
 
 ## 8. 给 AI 的阅读路径
 
-- 主交付物：**合并后的图鉴 JSON**（路径在实现计划中约定，例如 `assets/` 或 `docs/` 下单一文件）。
+- **主交付物（合并后，含 overlay 语义）**：仓库内 `assets/ui-atlas.json`。
+- **可再生几何**（仅导出，不含你写的说明）：`assets/ui-atlas.generated.json`（由 `sync` / `generate` 覆盖写入）。
+- **人工维护的说明与关系**：`assets/ui-atlas.overlay.json`，键格式 `"{screen_id}::{source_id}"`。
+- **更新命令**（在 `xjskp` 根目录、已安装 `requirements-ui-atlas.txt`）：
+
+```bash
+python -m src.ui_atlas.cli sync \
+  --pages assets/pages \
+  --overlay assets/ui-atlas.overlay.json \
+  --out-generated assets/ui-atlas.generated.json \
+  --out-merged assets/ui-atlas.json \
+  --repo-root .
+```
+
 - 可选：从同一数据生成简短 `README` 或索引说明 **schemaVersion** 与字段含义；**不**强制，以免重复维护。
 
 ## 9. 非目标（本期明确不做）

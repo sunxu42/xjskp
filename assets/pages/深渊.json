@@ -1,0 +1,521 @@
+[
+    {
+        "id": 223,
+        "annotations": [
+            {
+                "id": 105,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "original_width": 852,
+                        "original_height": 1600,
+                        "image_rotation": 0,
+                        "value": {
+                            "x": 3.1601166573493704,
+                            "y": 12.4068054613011,
+                            "width": 35.08265102650574,
+                            "height": 4.591944090274659,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "深渊挑战"
+                            ]
+                        },
+                        "id": "8Rp8b3pR8V",
+                        "from_name": "label",
+                        "to_name": "img-1",
+                        "type": "rectanglelabels",
+                        "origin": "manual"
+                    },
+                    {
+                        "original_width": 852,
+                        "original_height": 1600,
+                        "image_rotation": 0,
+                        "value": {
+                            "x": 35.72538661783103,
+                            "y": 80.31623949200896,
+                            "width": 21.370958411566086,
+                            "height": 1.6827621200385323,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "剩余次数"
+                            ]
+                        },
+                        "id": "mJMzlwCUqn",
+                        "from_name": "label",
+                        "to_name": "img-1",
+                        "type": "rectanglelabels",
+                        "origin": "manual"
+                    },
+                    {
+                        "original_width": 852,
+                        "original_height": 1600,
+                        "image_rotation": 0,
+                        "value": {
+                            "x": 56.078680343132056,
+                            "y": 93.92094341164258,
+                            "width": 19.603435535421532,
+                            "height": 1.6542407281734768,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "直接获得奖励"
+                            ]
+                        },
+                        "id": "Ns18kYUE_V",
+                        "from_name": "label",
+                        "to_name": "img-1",
+                        "type": "rectanglelabels",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-04-08T10:57:18.676915Z",
+                "updated_at": "2026-04-08T10:57:18.676941Z",
+                "draft_created_at": "2026-04-08T10:56:53.429836Z",
+                "lead_time": 47.103,
+                "prediction": {},
+                "result_count": 3,
+                "unique_id": "9e3367b0-370f-415a-bca4-337d4d792182",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 223,
+                "project": 19,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "df1b184b-iShot_2026-04-08_18.50.35.png",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "img": "\/data\/upload\/19\/df1b184b-iShot_2026-04-08_18.50.35.png"
+        },
+        "meta": {},
+        "created_at": "2026-04-08T10:54:14.211744Z",
+        "updated_at": "2026-04-08T10:57:18.697624Z",
+        "allow_skip": true,
+        "inner_id": 1,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 19,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 224,
+        "annotations": [
+            {
+                "id": 106,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "original_width": 852,
+                        "original_height": 1600,
+                        "image_rotation": 0,
+                        "value": {
+                            "x": 40.3002777388587,
+                            "y": 44.60876923739849,
+                            "width": 19.49712510977193,
+                            "height": 2.831514305714606,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "选择技能"
+                            ]
+                        },
+                        "id": "BOoiFGFW7h",
+                        "from_name": "label",
+                        "to_name": "img-1",
+                        "type": "rectanglelabels",
+                        "origin": "manual"
+                    },
+                    {
+                        "original_width": 852,
+                        "original_height": 1600,
+                        "image_rotation": 0,
+                        "value": {
+                            "x": 6.436849916623265,
+                            "y": 54.444555773038694,
+                            "width": 14.832741112218828,
+                            "height": 1.9373518933836777,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "技能1"
+                            ]
+                        },
+                        "id": "Qw9tuiJ4Kk",
+                        "from_name": "label",
+                        "to_name": "img-1",
+                        "type": "rectanglelabels",
+                        "origin": "manual"
+                    },
+                    {
+                        "original_width": 852,
+                        "original_height": 1600,
+                        "image_rotation": 0,
+                        "value": {
+                            "x": 30.411783664046148,
+                            "y": 54.84196128963021,
+                            "width": 12.87369983324654,
+                            "height": 1.291567928922447,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "技能2"
+                            ]
+                        },
+                        "id": "Qb8mNHtby3",
+                        "from_name": "label",
+                        "to_name": "img-1",
+                        "type": "rectanglelabels",
+                        "origin": "manual"
+                    },
+                    {
+                        "original_width": 852,
+                        "original_height": 1600,
+                        "image_rotation": 0,
+                        "value": {
+                            "x": 54.38671741146904,
+                            "y": 54.643258531334446,
+                            "width": 14.459590392414576,
+                            "height": 1.7386491350879254,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "技能3"
+                            ]
+                        },
+                        "id": "rt1YGaIK53",
+                        "from_name": "label",
+                        "to_name": "img-1",
+                        "type": "rectanglelabels",
+                        "origin": "manual"
+                    },
+                    {
+                        "original_width": 852,
+                        "original_height": 1600,
+                        "image_rotation": 0,
+                        "value": {
+                            "x": 79.0102720110111,
+                            "y": 54.643258531334446,
+                            "width": 13.62000127285502,
+                            "height": 1.6889734455139802,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "技能4"
+                            ]
+                        },
+                        "id": "N3h48uDI7n",
+                        "from_name": "label",
+                        "to_name": "img-1",
+                        "type": "rectanglelabels",
+                        "origin": "manual"
+                    },
+                    {
+                        "original_width": 852,
+                        "original_height": 1600,
+                        "image_rotation": 0,
+                        "value": {
+                            "x": 49.69940704554605,
+                            "y": 85.85659051573779,
+                            "width": 0.6464489749743441,
+                            "keypointlabels": [
+                                "确认技能"
+                            ]
+                        },
+                        "id": "ugD8SILzFo",
+                        "from_name": "kp-1",
+                        "to_name": "img-1",
+                        "type": "keypointlabels",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-04-09T03:38:17.395150Z",
+                "updated_at": "2026-04-09T03:38:38.776599Z",
+                "draft_created_at": "2026-04-09T03:37:31.868398Z",
+                "lead_time": 80.42999999999999,
+                "prediction": {},
+                "result_count": 6,
+                "unique_id": "661a7a76-4472-4c5d-8ece-d565fc9c21de",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 224,
+                "project": 19,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "733f7981-iShot_2026-04-09_11.27.31.png",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "img": "\/data\/upload\/19\/733f7981-iShot_2026-04-09_11.27.31.png"
+        },
+        "meta": {},
+        "created_at": "2026-04-09T03:29:32.290730Z",
+        "updated_at": "2026-04-09T03:38:38.794472Z",
+        "allow_skip": true,
+        "inner_id": 2,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 19,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 225,
+        "annotations": [
+            {
+                "id": 107,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "original_width": 852,
+                        "original_height": 1600,
+                        "image_rotation": 0,
+                        "value": {
+                            "x": 35.91641170436525,
+                            "y": 41.1986345117465,
+                            "width": 28.578650173365894,
+                            "height": 2.4678050622676793,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "深渊怪物强化"
+                            ]
+                        },
+                        "id": "rWb-gznimA",
+                        "from_name": "label",
+                        "to_name": "img-1",
+                        "type": "rectanglelabels",
+                        "origin": "manual"
+                    },
+                    {
+                        "original_width": 852,
+                        "original_height": 1600,
+                        "image_rotation": 0,
+                        "value": {
+                            "x": 48.16044863558863,
+                            "y": 85.88640275387263,
+                            "width": 0.6464489749743441,
+                            "keypointlabels": [
+                                "确认技能"
+                            ]
+                        },
+                        "id": "ghy_IAtonG",
+                        "from_name": "kp-1",
+                        "to_name": "img-1",
+                        "type": "keypointlabels",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-04-09T03:39:23.112879Z",
+                "updated_at": "2026-04-09T03:39:23.112904Z",
+                "draft_created_at": "2026-04-09T03:39:03.543785Z",
+                "lead_time": 33.68,
+                "prediction": {},
+                "result_count": 2,
+                "unique_id": "aea017e9-aacb-48b3-ab2c-89cec17b3e80",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 225,
+                "project": 19,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "00922632-iShot_2026-04-09_11.27.24.png",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "img": "\/data\/upload\/19\/00922632-iShot_2026-04-09_11.27.24.png"
+        },
+        "meta": {},
+        "created_at": "2026-04-09T03:29:32.290789Z",
+        "updated_at": "2026-04-09T03:39:23.129071Z",
+        "allow_skip": true,
+        "inner_id": 3,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 19,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 226,
+        "annotations": [
+            {
+                "id": 108,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "original_width": 852,
+                        "original_height": 1600,
+                        "image_rotation": 0,
+                        "value": {
+                            "x": 44.03724102115312,
+                            "y": 37.849756253660374,
+                            "width": 11.273420152023867,
+                            "height": 2.3317811806179876,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "提示"
+                            ]
+                        },
+                        "id": "pJanmZGPKF",
+                        "from_name": "label",
+                        "to_name": "img-1",
+                        "type": "rectanglelabels",
+                        "origin": "manual"
+                    },
+                    {
+                        "original_width": 852,
+                        "original_height": 1600,
+                        "image_rotation": 0,
+                        "value": {
+                            "x": 66.42932701151251,
+                            "y": 64.29762574640255,
+                            "width": 0.6464489749743441,
+                            "keypointlabels": [
+                                "关闭提示"
+                            ]
+                        },
+                        "id": "knjT32Cbef",
+                        "from_name": "kp-1",
+                        "to_name": "img-1",
+                        "type": "keypointlabels",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-04-09T03:39:48.052048Z",
+                "updated_at": "2026-04-09T03:39:48.052070Z",
+                "draft_created_at": "2026-04-09T03:39:44.591473Z",
+                "lead_time": 21.753,
+                "prediction": {},
+                "result_count": 2,
+                "unique_id": "0a6f9962-a9ad-4d6e-845e-8144d0efa601",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 226,
+                "project": 19,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "5b64ea11-iShot_2026-04-08_18.52.23.png",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "img": "\/data\/upload\/19\/5b64ea11-iShot_2026-04-08_18.52.23.png"
+        },
+        "meta": {},
+        "created_at": "2026-04-09T03:29:32.290819Z",
+        "updated_at": "2026-04-09T03:39:48.067312Z",
+        "allow_skip": true,
+        "inner_id": 4,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 19,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 227,
+        "annotations": [
+            {
+                "id": 109,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "original_width": 852,
+                        "original_height": 1600,
+                        "image_rotation": 0,
+                        "value": {
+                            "x": 39.92111685342078,
+                            "y": 35.359413535683025,
+                            "width": 19.960558426710385,
+                            "height": 2.5407961822047653,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "恭喜获得"
+                            ]
+                        },
+                        "id": "GRcmY9vob5",
+                        "from_name": "label",
+                        "to_name": "img-1",
+                        "type": "rectanglelabels",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-04-09T03:40:32.243754Z",
+                "updated_at": "2026-04-09T03:40:32.243777Z",
+                "draft_created_at": null,
+                "lead_time": 13.444,
+                "prediction": {},
+                "result_count": 1,
+                "unique_id": "00bbcd98-e67d-46ce-b1a2-789ef8aa3d18",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 227,
+                "project": 19,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "f681f6b1-iShot_2026-04-08_18.53.14.png",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "img": "\/data\/upload\/19\/f681f6b1-iShot_2026-04-08_18.53.14.png"
+        },
+        "meta": {},
+        "created_at": "2026-04-09T03:29:46.689235Z",
+        "updated_at": "2026-04-09T03:40:32.260024Z",
+        "allow_skip": true,
+        "inner_id": 5,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 19,
+        "updated_by": 1,
+        "comment_authors": []
+    }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "inner_id": 1,
+    "annotations": [
+      {
+        "result": [
+          {
+            "id": "kp-1",
+            "type": "keypointlabels",
+            "value": {
+              "x": 50.0,
+              "y": 40.0,
+              "width": 0.64,
+              "keypointlabels": ["深渊_挑战"]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "inner_id": 2,
+    "annotations": [
+      {
+        "result": [
+          {
+            "id": "rect-b",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 8.0,
+              "y": 25.0,
+              "width": 17.0,
+              "height": 2.4,
+              "rectanglelabels": ["战场争霸"]
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
